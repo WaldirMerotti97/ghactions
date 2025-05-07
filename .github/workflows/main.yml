@@ -25,4 +25,10 @@ jobs:
     steps: 
       - name: "Current NodeJS version verification"
         run: node --version
+      - name: "Defining node version v24.0.0 of NodeJS"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'v24.0.0'
+      - name: "NodeJS version after update"
+        run: node --version
           
