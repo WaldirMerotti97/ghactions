@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   first-job:
-    name: "Job Test"
+    name: "First Job"
     runs-on: ubuntu-latest
     steps:
       - name: "First action"
@@ -19,4 +19,10 @@ jobs:
           variavel = "Hello, Python!"
           print(variavel)
         shell: python
+  second-job:
+    name: "Installation of nodejs environment"
+    runs-on: ubuntu-latest
+    steps: 
+      - name: "Current NodeJS version verification"
+        run: node --version
           
