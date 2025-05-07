@@ -14,3 +14,9 @@ jobs:
         run: |
           echo "Don't worry, be happy!"
           echo "Bye bye!"
+      - name: "Python Script"
+        run: |
+          variavel = "Hello, Python!"
+          print(variavel)
+        shell: python
+          
